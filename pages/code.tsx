@@ -1,5 +1,6 @@
-import axios from 'axios';
+import axios from 'axios'
 import useSWR from 'swr'
+import Seo from '../components/seo'
 
 const fetcher = async (url: string) => {
     const res = await axios.get(url)
@@ -36,6 +37,7 @@ export default function Code() {
     if (!data) return <div>loading...</div>
     return (
         <>
+            <Seo title="コード集" description="tuna2134が今まで書いたコードたちです。" />
             <div className="grid grid-cols-2">
                 {data.map((data: BoxProps, index: number) => {
                     return (

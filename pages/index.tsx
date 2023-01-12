@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import Seo from "../components/seo"
 
 interface BoxProps {
     title: string;
@@ -17,6 +18,7 @@ function Box({ title, children }: BoxProps) {
 export default function Page() {
     return (
         <>
+            <Seo title="ホーム" description="tuna2134の作品集のホームページです。" />
             <Box title="僕の作品集">
                 <p>今まで、ぼくは色々作ってきました。しかし</p>
                 <p>最近あまりみてくれる人が少ないので、紹介がてら</p>
