@@ -1,14 +1,22 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Header from '../components/header'
+import { AnimatePresence, motion } from 'framer-motion'
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
     return (
         <>
-            <Header />
-            <main className="mx-12 my-4">
-                <Component {...pageProps} />
-            </main>
+            <AnimatePresence mode="wait">
+                <Header />
+                <motion.main
+                    className="mx-12 my-4"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                >
+                    <Component key={router.asPath} {...pageProps} />
+                </motion.main>
+            </AnimatePresence>
         </>
     )
 }
