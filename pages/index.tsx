@@ -17,7 +17,7 @@ function Box({ title, children }: BoxProps) {
 
 export default function Page() {
     return (
-        <>
+        <div className="px-4">
             <Seo title="ホーム" description="tuna2134の作品集のホームページです。" />
             <Box title="僕の作品集">
                 <p>今まで、ぼくは色々作ってきました。しかし</p>
@@ -35,6 +35,6 @@ export default function Page() {
                 </a>
                 <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
             </Box>
-        </>
+        </div>
     )
 }
