@@ -34,7 +34,12 @@ function Box({ title, description, url, tags, image }: BoxProps) {
 export default function Code() {
     let { data, error } = useSWR<BoxProps[], Error>('/works/code.json', fetcher)
     if (error) return <div>failed to load</div>
-    if (!data) return <div>loading...</div>
+    if (!data) return (
+        <>
+            <Seo title="コード集" description="tuna2134が今まで書いたコードたちです。" />
+            <p>Now loading...</p>
+        </>
+    )
     return (
         <>
             <Seo title="コード集" description="tuna2134が今まで書いたコードたちです。" />

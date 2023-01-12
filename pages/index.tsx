@@ -9,7 +9,7 @@ interface BoxProps {
 function Box({ title, children }: BoxProps) {
     return (
         <div className="p-4">
-            <h2 className="text-2xl p-2">{title}</h2>
+            <h2 className="text-2xl p-2 font-semibold">{title}</h2>
             {children}
         </div>
     )
@@ -27,6 +27,13 @@ export default function Page() {
 
             <Box title="最近の活動">
                 <p>まだ何もない</p>
+            </Box>
+
+            <Box title="ツイッター">
+                <a className="twitter-timeline" data-width="400" data-height="440" href="https://twitter.com/fdc_tuna2134?ref_src=twsrc%5Etfw">
+                    Tweets by fdc_tuna2134
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
             </Box>
         </>
     )
