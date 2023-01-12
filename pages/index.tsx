@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
 import Seo from "../components/seo"
+import { Timeline } from 'react-twitter-widgets'
 
 interface BoxProps {
     title: string;
@@ -30,10 +31,16 @@ export default function Page() {
             </Box>
 
             <Box title="ツイッター">
-                <a className="twitter-timeline" data-width="430" data-height="460" href="https://twitter.com/fdc_tuna2134?ref_src=twsrc%5Etfw">
-                    Tweets by fdc_tuna2134
-                </a>
-                <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                <Timeline
+                    dataSource={{
+                        sourceType: 'profile',
+                        screenName: 'fdc_tuna2134'
+                    }}
+                    options={{
+                        width: '430',
+                        height: '460'
+                    }}
+                />
             </Box>
         </div>
     )
