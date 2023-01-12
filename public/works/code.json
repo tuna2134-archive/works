@@ -12,5 +12,26 @@
         "url": "https://pypi.org/project/google-custom-search",
         "tags": ["library"],
         "image": null
+    },
+    {
+        "title": "voxbot",
+        "description": "Discordのvoicevoxを使って読み上げてくれるbotです。",
+        "url": "https://github.com/tuna2134/voxbot.git",
+        "tags": ["bot"],
+        "image": null
+    },
+    {
+        "title": "aquestalk-rs",
+        "description": "AquesTalkのRustラッパーです。主に1と2のバージョンをサポートしています。",
+        "url": "https://github.com/KuronekoServer/aquestalk-rs.git",
+        "tags": ["library"],
+        "image": null
+    },
+    {
+        "title": "shorten",
+        "description": "短縮URLを作成することができます。Rustで書かれているためメモリーをあまり食いません。",
+        "url": "https://github.com/mc-fdc-dev/shorten.git",
+        "tags": ["web"],
+        "image": null
     }
 ]

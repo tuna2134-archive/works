@@ -31,7 +31,7 @@ export default function Header() {
     return (
         <header>
             <h1 className="text-[40px] text-center pt-4 pb-3">
-                <Link href="/">tuna2134&apos;s works</Link>
+                <Link href="/" className='font-hikkitai'>tuna2134&apos;s works</Link>
             </h1>
             <nav>
                 <ul className="flex bg-green-500 py-4 px-4">

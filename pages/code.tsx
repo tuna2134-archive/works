@@ -16,7 +16,7 @@ interface BoxProps {
 
 function Box({ title, description, url, tags, image }: BoxProps) {
     return (
-        <div className="p-2 flex border rounded w-1/2 m-2">
+        <div className="p-2 flex border rounded m-2">
             <div>
                 <h2 className="text-2xl p-2">
                     <a href={url}>{title}</a>
@@ -36,7 +36,7 @@ export default function Code() {
     if (!data) return <div>loading...</div>
     return (
         <>
-            <div className="flex">
+            <div className="grid grid-cols-2">
                 {data.map((data: BoxProps, index: number) => {
                     return (
                         <Box
