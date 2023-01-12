@@ -1,8 +1,23 @@
 import Link from 'next/link'
+import { ReactNode } from 'react'
 
 interface Nav {
     name: string;
     path: string;
+}
+
+interface BoxProps {
+    title: string;
+    children: ReactNode;
+}
+
+function Box({ title, children }: BoxProps) {
+    return (
+        <div className="p-4">
+            <h2 className="text-2xl p-2">{title}</h2>
+            {children}
+        </div>
+    )
 }
 
 export default function Header() {
