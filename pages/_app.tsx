@@ -6,7 +6,9 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Header />
-            <Component {...pageProps} />
+            <main className="mx-12 my-4">
+                <Component {...pageProps} />
+            </main>
         </>
     )
 }
