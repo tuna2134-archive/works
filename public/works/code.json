@@ -1,0 +1,16 @@
+[
+    {
+        "title": "mizu",
+        "description": "mizuはマークダウンパーサーで、どんなライブラリより早いです。",
+        "url": "https://pypi.org/project/mizu/",
+        "tags": ["library"],
+        "image": null
+    },
+    {
+        "title": "google-custom-search",
+        "description": "google custom search api をより簡単に使うことができるラッパーです。",
+        "url": "https://pypi.org/project/google-custom-search",
+        "tags": ["library"],
+        "image": null
+    }
+]
