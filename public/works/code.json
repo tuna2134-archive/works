@@ -33,5 +33,12 @@
         "url": "https://github.com/mc-fdc-dev/shorten.git",
         "tags": ["web"],
         "image": null
+    },
+    {
+        "title": "sanic-discord",
+        "description": "Discord apiのOauth2のsanic向けapiラッパーです。",
+        "url": "https://pypi.org/project/sanic-discord/",
+        "tags": ["library"],
+        "image": null
     }
 ]
