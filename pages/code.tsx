@@ -25,7 +25,7 @@ function Box({ title, description, url, tags, image }: BoxProps) {
                 <p>{description}</p>
             </div>
             <div className='pl-2'>
-                <img src={image} width={70} height={70} />
+                <img src={image} width={70} height={70} alt={title} />
             </div>
         </div>
     )
