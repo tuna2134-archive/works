@@ -16,16 +16,17 @@ interface BoxProps {
 }
 
 function Box({ title, description, url, tags, image }: BoxProps) {
+    let tag = tags.join(',')
     return (
-        <div className="p-2 flex border rounded m-2">
+        <div className="p-2 flex border rounded m-2 justify-between">
             <div>
                 <h2 className="text-2xl p-2">
                     <a href={url}>{title}</a>
                 </h2>
                 <p>{description}</p>
             </div>
-            <div className='pl-2'>
-                <img src={image} width={70} height={70} alt={title} />
+            <div className='pl-2 justify-end'>
+                <p className="border rounded-full px-1 py-0.5">{tag}</p>
             </div>
         </div>
     )
