@@ -7,6 +7,12 @@ const fetcher = async (url: string) => {
     return res.data
 }
 
+const colors: ColorType = {
+    'library': 'yellow-300',
+    'web': 'blue-500',
+    'bot': 'violet-500',
+}
+
 interface BoxProps {
     title: string;
     description: string;
@@ -15,8 +21,12 @@ interface BoxProps {
     image?: string;
 }
 
+interface ColorType {
+    [key: string]: string;
+}
+
 function Box({ title, description, url, tags, image }: BoxProps) {
-    let tag = tags.join(',')
+    // let tag = tags.join(',')
     return (
         <div className="p-2 flex border rounded m-2 justify-between">
             <div>
@@ -26,7 +36,16 @@ function Box({ title, description, url, tags, image }: BoxProps) {
                 <p>{description}</p>
             </div>
             <div className='pl-2 justify-end'>
-                <p className="border rounded-full px-1 py-0.5">{tag}</p>
+                {tags.map((tag: string, index: number) => {
+                    return (
+                        <p
+                            className={`border rounded-full px-1 py-0.5 bg-${colors[tag]} text-center`}
+                            key={index}
+                        >
+                            {tag}
+                        </p>
+                    )
+                })}
             </div>
         </div>
     )
