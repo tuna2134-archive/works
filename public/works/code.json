@@ -40,5 +40,12 @@
         "url": "https://pypi.org/project/sanic-discord/",
         "tags": ["library"],
         "image": null
+    },
+    {
+        "title": "works",
+        "description": "今あなたが見ているこのサイトです。主に自分の作品を紹介しています。",
+        "url": "https://github.com/tuna2134/works.git",
+        "tags": ["web"],
+        "image": null
     }
 ]
