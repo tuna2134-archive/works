@@ -47,5 +47,12 @@
         "url": "https://github.com/tuna2134/works.git",
         "tags": ["web"],
         "image": null
+    },
+    {
+        "title": "RT",
+        "description": "RTというDiscordで使える多機能botです。読み上げや認証など色々あります。",
+        "url": "https://rt.rext.dev",
+        "tags": ["bot"],
+        "image": null
     }
 ]
