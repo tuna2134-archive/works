@@ -54,5 +54,12 @@
         "url": "https://rt.rext.dev",
         "tags": ["bot"],
         "image": null
+    },
+    {
+        "title": "webhook-and-embed",
+        "description": "Discordのwebhookを使用して、embedを送信します。",
+        "url": "https://pages.tuna2134.jp/webhook-and-embed/",
+        "tags": ["web"],
+        "image": null
     }
 ]
