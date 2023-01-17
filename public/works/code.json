@@ -57,7 +57,7 @@
     },
     {
         "title": "webhook-and-embed",
-        "description": "Discordのwebhookを使用して、embedを送信します。",
+        "description": "Discordのwebhookを使用して、embedを送信することができるサイトです。",
         "url": "https://pages.tuna2134.jp/webhook-and-embed/",
         "tags": ["web"],
         "image": null
