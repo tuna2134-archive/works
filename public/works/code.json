@@ -61,5 +61,12 @@
         "url": "https://pages.tuna2134.jp/webhook-and-embed/",
         "tags": ["web"],
         "image": null
+    },
+    {
+        "title": "voicevox-client",
+        "description": "Voicevox engineをPythonで簡単に扱えるようにできる非公式ラッパーです。",
+        "url": "https://github.com/tuna2134/voicevox-client",
+        "tags": ["library"],
+        "image": null
     }
 ]
