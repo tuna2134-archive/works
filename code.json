@@ -1,0 +1,72 @@
+[
+    {
+        "title": "mizu",
+        "description": "mizuはマークダウンパーサーで、どんなライブラリより早いです。",
+        "url": "https://pypi.org/project/mizu/",
+        "tags": ["library"],
+        "image": null
+    },
+    {
+        "title": "google-custom-search",
+        "description": "google custom search api をより簡単に使うことができるラッパーです。",
+        "url": "https://pypi.org/project/google-custom-search",
+        "tags": ["library"],
+        "image": null
+    },
+    {
+        "title": "voxbot",
+        "description": "Discordのvoicevoxを使って読み上げてくれるbotです。",
+        "url": "https://github.com/tuna2134/voxbot.git",
+        "tags": ["bot"],
+        "image": null
+    },
+    {
+        "title": "aquestalk-rs",
+        "description": "AquesTalkのRustラッパーです。主に1と2のバージョンをサポートしています。",
+        "url": "https://github.com/KuronekoServer/aquestalk-rs.git",
+        "tags": ["library"],
+        "image": null
+    },
+    {
+        "title": "shorten",
+        "description": "短縮URLを作成することができます。Rustで書かれているためメモリーをあまり食いません。",
+        "url": "https://github.com/mc-fdc-dev/shorten.git",
+        "tags": ["web"],
+        "image": null
+    },
+    {
+        "title": "sanic-discord",
+        "description": "Discord apiのOauth2のsanic向けapiラッパーです。",
+        "url": "https://pypi.org/project/sanic-discord/",
+        "tags": ["library"],
+        "image": null
+    },
+    {
+        "title": "works",
+        "description": "今あなたが見ているこのサイトです。主に自分の作品を紹介しています。",
+        "url": "https://github.com/tuna2134/works.git",
+        "tags": ["web"],
+        "image": null
+    },
+    {
+        "title": "RT",
+        "description": "RTというDiscordで使える多機能botです。読み上げや認証など色々あります。",
+        "url": "https://rt.rext.dev",
+        "tags": ["bot"],
+        "image": null
+    },
+    {
+        "title": "webhook-and-embed",
+        "description": "Discordのwebhookを使用して、embedを送信することができるサイトです。",
+        "url": "https://pages.tuna2134.jp/webhook-and-embed/",
+        "tags": ["web"],
+        "image": null
+    },
+    {
+        "title": "voicevox-client",
+        "description": "Voicevox engineをPythonで簡単に扱えるようにできる非公式ラッパーです。",
+        "url": "https://github.com/tuna2134/voicevox-client",
+        "tags": ["library"],
+        "image": null
+    }
+]

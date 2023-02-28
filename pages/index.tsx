@@ -27,7 +27,7 @@ export default function Page() {
             </Box>
 
             <Box title="最近の活動">
-                <p>まだ何もない</p>
+                <p>Rextやめた</p>
             </Box>
 
             <Box title="ツイッター">

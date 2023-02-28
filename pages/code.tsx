@@ -1,11 +1,7 @@
 import axios from 'axios'
 import useSWR from 'swr'
 import Seo from '../components/seo'
-
-const fetcher = async (url: string) => {
-    const res = await axios.get(url)
-    return res.data
-}
+import codes from "../code.json"
 
 const colors: ColorType = {
     'library': 'yellow-300',
@@ -26,7 +22,6 @@ interface ColorType {
 }
 
 function Box({ title, description, url, tags, image }: BoxProps) {
-    // let tag = tags.join(',')
     return (
         <div className="p-2 flex border rounded m-2 justify-between">
             <div>
@@ -52,19 +47,11 @@ function Box({ title, description, url, tags, image }: BoxProps) {
 }
 
 export default function Code() {
-    let { data, error } = useSWR<BoxProps[], Error>('/works/code.json', fetcher)
-    if (error) return <div>failed to load</div>
-    if (!data) return (
-        <>
-            <Seo title="コード集" description="tuna2134が今まで書いたコードたちです。" />
-            <p>Now loading...</p>
-        </>
-    )
     return (
         <>
             <Seo title="コード集" description="tuna2134が今まで書いたコードたちです。" />
             <div className="grid grid-cols-2">
-                {data.map((data: BoxProps, index: number) => {
+                {codes.map((data: BoxProps, index: number) => {
                     return (
                         <Box
                             key={index}
